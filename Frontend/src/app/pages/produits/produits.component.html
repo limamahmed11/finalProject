@@ -1,0 +1,146 @@
+
+<!-- <div class=" d-flex justify-content-between flex-wrap">
+    <ng-container *ngFor="let item of productList">
+        <ng-container *ngIf="item.category_id === share.categoryId">
+
+            <div class="card m-2" style="width: 18rem;" style="width:30%">
+                <img src="assets/images/{{item.photo}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5>{{item.name}}</h5>
+                    <p class="card-text">{{item.description}}</p>
+                    <p>${{item.price}}</p>
+                    <button class="btn btn-primary">Ajouter produit </button>
+                </div>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="-1 === share.categoryId">
+
+            <div class="card m-2" style="width: 18rem;" style="width:30%">
+                <img src="assets/images/{{item.photo}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5>{{item.name}}</h5>
+                    <p class="card-text">{{item.description}}</p>
+                    <p>${{item.price}}</p>
+                    <button class="btn btn-primary">Ajouter produit </button>
+                </div>
+            </div>
+        </ng-container>
+      
+
+    </ng-container>
+</div> -->
+
+
+<div class="row mt-4">
+    
+
+  <!-- <ng-container *ngFor="let item of productList">
+      <ng-container *ngIf="item.category_id === share.categoryId">
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="assets/images/{{ item.photo }}" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+              <h5 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;" class="card-title">{{ item.name }}</h5>
+              <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;" class="card-text">{{ item.description }}</p>
+              <p class="card-text"><strong>{{ item.price }}</strong>DT</p>
+              <ion-button class="btn btn-primary" (click)="addToCart(item)">Ajouter produit</ion-button>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+
+      <ng-container *ngIf="-1 === share.categoryId">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="assets/images/{{ item.photo }}" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+              <h5 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;" class="card-title">{{ item.name }}</h5>
+              <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;" class="card-text">{{ item.description }}</p>
+              <p class="card-text">$<strong>{{ item.price }}</strong></p>
+              <button class="btn btn-primary" id="liveAlertBtn" (click)="addToCart(item)">Ajouter produit</button>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+
+    </ng-container> -->
+
+    <!-- <ng-container *ngFor="let item of productList">
+      <ng-container *ngIf="item.category_id === share.categoryId">
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <img src="assets/images/{{ item.photo }}" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">{{ item.name }}</h5>
+              <p class="card-text"><strong>{{ item.price }}</strong> DT</p>
+              <ion-button expand="block" color="primary" (click)="addToCart(item)">Ajouter produit</ion-button>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    
+      <ng-container *ngIf="share.categoryId === -1">
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <img src="assets/images/{{ item.photo }}" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">{{ item.name }}</h5>
+              <p class="card-text">{{ item.description }}</p>
+              <p class="card-text"><strong>{{ item.price }}</strong> DT</p>
+              <button class="btn btn-primary" (click)="addToCart(item)">Ajouter produit</button>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </ng-container> -->
+    
+    <ng-container *ngFor="let item of productList">
+      <!-- <ng-container *ngIf="item.category_id === share.categoryId">
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <div class="image-container">
+              <img src="assets/images/{{ item.photo }}" class="card-img-top" alt="Product Image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ item.name }}</h5>
+              <p class="card-text">{{ item.description }}</p>
+              <p class="card-text"><strong>{{ item.price }}</strong> DT</p>
+              <ion-button expand="block" color="warning" (click)="addToCart(item)" style="font-size:x-small;">Add to Cart</ion-button>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+     -->
+     <ng-container *ngIf="item.category_id === share.categoryId">
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <div class="card">
+          <div class="image-container">
+            <img src="assets/images/{{ item.photo }}" class="card-img-top" alt="Product Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <!-- <p class="card-text">{{ item.description }}</p> -->
+            <p class="card-text"><strong>{{ item.price }}</strong> DT</p>
+            <ion-button expand="block" color="warning" (click)="addToCart(item)" style="font-size:x-small;">Add to Cart</ion-button>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+      <ng-container *ngIf="share.categoryId === -1">
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+            <div class="image-container">
+              <img src="assets/images/{{ item.photo }}" class="card-img-top" alt="Product Image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ item.name }}</h5>
+              <p class="card-text">{{ item.description }}</p>
+              <p class="card-text"><strong>{{ item.price }}</strong> DT</p>
+              <button class="btn btn-primary" (click)="addToCart(item)">Ajouter produit</button>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </ng-container>
+    
+</div>

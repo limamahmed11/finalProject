@@ -1,0 +1,23 @@
+
+
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-md="4">
+        <ion-card (click)="navigateTo('profile')" class="sign-out-card">
+          <ion-card-header>
+            Your Account
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+     
+      <ion-col size="12" size-md="4">
+        <ion-card (click)="signOut()" class="sign-out-card">
+          <ion-card-header class="sign-out-header">
+            Sign Out
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

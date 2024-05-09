@@ -1,0 +1,29 @@
+<div style="height: 20px;"></div>
+
+<table class="table mt-4">
+  <thead>
+    <tr>
+      <th scope="col" style="text-align: center;">Nom</th>
+      <th scope="col" style="text-align: center;">Image</th>
+      <th scope="col" style="text-align: center;">Quantite</th>
+      <th scope="col" style="text-align: center;">Price</th>
+      <th scope="col"></th>
+
+    </tr>
+  </thead>
+  <tbody>
+
+      <ng-container *ngFor="let item of cartItemList; let i=index" >
+
+          <tr class="table-row">
+              <td style="text-align: center;">{{item.name}}</td>
+              <td style="text-align: center;"><img src="assets/images/{{item.photo}}" class="card-img-top" alt=""></td>
+              <td style="text-align: center;">1</td>
+              <td style="text-align: center;">{{item.price}}</td>
+              <td style="text-align: center;"><button class="btn fas fa-trash btn-danger" (click)="delete(item)" ></button></td>
+          </tr>
+
+      </ng-container>
+    
+  </tbody>
+</table>

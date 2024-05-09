@@ -1,0 +1,107 @@
+#carouselExampleRide {
+    width: 70%;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+
+.categories-button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 16px; /* Adjust as needed */
+  }
+
+  // .sticky {
+  //   position: -webkit-sticky;
+  //   position: sticky;
+  //   bottom: 0;
+  //   padding: 5px;
+  //   background-color: #cae8ca;
+  //   border: 2px solid #4CAF50;
+  // }
+
+  // .fixed {
+  //   position: fixed;
+  //   bottom: 0;
+  //   right: 0;
+  //   left: 0;
+  //   width: 300px;
+  //   border: 3px solid #73AD21;
+  // }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+// .tabs {
+//     display: sticky;
+//     justify-content: space-around;
+//     background-color: #333;
+//     color: white;
+//     padding: 10px 0;
+// }
+
+.tab-link {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.tab-link.active {
+    border-bottom: 2px solid white;
+}
+
+  // .ion-tabs {
+  //   bottom: 0;
+  //   width: 100%;
+  //   z-index: 999; /* Adjust z-index as needed */
+  // }
+  .ion-padding{ 
+    --padding-bottom: var(--ion-padding, 0px);
+  }
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color:  #CCCCCC;
+    border: 2px solid  #CCCCCC;
+    justify-content: space-around;
+
+  }
+.boot{  flex: 1; /* Ensures buttons take up equal space */
+  margin: 0 5px;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 20px;
+      background-color: #ffffff;
+
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease; }
+  .fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    border: 0px solid  #F1C40F;
+    display: flex;
+    border-radius: 25px; /* Adjust the value to make the border roundier */
+    justify-content: space-between; /* Ensures equal space between buttons */
+    background-color: #ffffff;
+  }
+
+  .tab-link {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.tab-link.active {
+    border-bottom: 2px solid #333333; /* Dark underline for active tab */
+}

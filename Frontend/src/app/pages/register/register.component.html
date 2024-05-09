@@ -1,0 +1,114 @@
+<!-- <ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="register()">
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input type="text" [(ngModel)]="username" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" [(ngModel)]="email" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password" required></ion-input>
+    </ion-item>
+
+    <div class="ion-text-center ion-padding-top">
+      <ion-button expand="block" type="submit" [disabled]="!form.valid">Register</ion-button>
+    </div>
+  </form>
+</ion-content> -->
+
+
+
+
+<!-- registration.page.html -->
+<!-- registration.page.html -->
+<!-- <ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Registration
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="register()">
+    <ion-list lines="full">
+      <ion-item>
+        <ion-label position="floating">Username</ion-label>
+        <ion-input type="text" [(ngModel)]="username" name="username" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <div class="ion-padding">
+      -->
+      <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'> -->
+<div class="ion-body">
+  <form [formGroup]="registerform" (ngSubmit)="proceedregister()" >
+    <div class="box">
+          
+          <h1 style="text-align: center;">Registration</h1>
+
+          <ion-input type="nom" name="email" placeholder="First Name" class="name" formControlName="name" />
+
+          <ion-input type="nom" name="email" placeholder="Last Name" class="name" formControlName="prenom" />
+          
+      
+          <ion-input type="email" name="email"  placeholder="Email" class="email" formControlName="email" ></ion-input>
+      
+      
+          <ion-input type="password" name="password" placeholder="Password" class="password" formControlName="password" > <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+          <ion-button fill="clear" slot="end" aria-label="Show/hide">
+            <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+          </ion-button>
+        </ion-input>
+
+        <ion-input type="email" name="email"  placeholder="Mobile number" class="email" formControlName="num_tel"/>
+        <ion-input type="email" name="email"  placeholder="Adresse" class="email" formControlName="adresse" />
+
+      
+          <button type="submit" class="btn">Sign Up</button>
+      
+          <!-- <a href="#"><div id="btn2">Sign In</div></a> -->
+      
+    </div>
+  </form>
+</div>
+      
+<!-- <p>Forgot your password? <u style="color:#f1c40f;">Click Here!</u></p> -->
+  
+
+
+
+
+
+
+<!-- <ion-list>
+  <ion-item>
+    <ion-input labelPlacement="stacked" label="Email" placeholder="email@domain.com">
+      <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+      <ion-button fill="clear" slot="end" aria-label="Show/hide">
+        <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+      </ion-button>
+    </ion-input>
+  </ion-item>
+</ion-list>  -->

@@ -1,0 +1,33 @@
+<div class="ion-body">
+  <div class="box">
+  <form [formGroup]="loginform" (ngSubmit)="proceedlogin()">
+    
+      
+      <h1 style="text-align: center;">Login</h1>
+      <div style="height: 20px;"></div>
+
+  
+      <ion-input type="email" name="email"  placeholder="Email" class="email" formControlName="email"></ion-input>
+      
+      
+          <ion-input type="password" name="password" placeholder="Password" class="password" formControlName="password" > <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+          <ion-button fill="clear" slot="end" aria-label="Show/hide">
+            <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+          </ion-button>
+        </ion-input>
+        <div style="height: 30px;"></div>
+
+        <p style="font-size:small;">Don't have an account? <a routerLink="signup">Sign Up</a></p>
+        <div style="height: 20px;"></div>
+
+      <button type="submit" class="btn" >Sign In</button>
+  
+          
+  </form>
+
+  <!-- <a routerLink="signup"><div  id="btn2">Sign Up</div></a> -->
+  <!-- <a routerLink="signup" routerLinkActive="active">Sign Up</a> -->
+
+</div>
+<!-- <a routerLink="signup">Sign Up</a> -->
+</div>

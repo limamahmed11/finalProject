@@ -1,0 +1,50 @@
+<!-- <div class="nav-item dropdown" class="solide">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="casourelDisparu()">
+    Categories
+  </a>
+  <ul class="dropdown-menu" >
+      <ng-container *ngFor="let item of categoryList">
+          <li class="solide"><a class="dropdown-item" routerLink="products" (click)="sendId(item.id)">{{item.name}}</a></li>
+      </ng-container>
+      <li class="solide"><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" routerLink="products" (click)="sendId(-1)">Tous les produits</a></li>
+  </ul>
+</div> -->
+<div style="height: 60px;"></div>
+
+<div class="nav-item dropdown dropdown-menu-end" style="float: right;">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="casourelDisparu()">
+    Categories
+  </a>
+  <ul class="dropdown-menu custom-dropdown">
+    <ng-container *ngFor="let item of categoryList">
+      <li><a class="dropdown-item" routerLink="products" (click)="sendId(item.id)">{{item.name}}</a></li>
+    </ng-container>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" routerLink="products" (click)="sendId(-1)">Tous les produits</a></li>
+  </ul>
+</div>
+
+
+
+<!-- <ion-item lines="none" class="nav-item dropdown">
+  <ion-button class="nav-link dropdown-toggle" expand="block" (click)="casourelDisparu()">
+    Categories
+  </ion-button>
+  <ion-menu menuId="dropdownMenu">
+    <ion-list>
+      <ng-container *ngFor="let item of categoryList">
+        <ion-item (click)="sendId(item.id)">
+          {{item.name}}
+        </ion-item>
+      </ng-container>
+      <ion-item lines="none">
+        <ion-segment value="-1" (ionChange)="sendId(-1)">
+          <ion-segment-button value="-1">
+            Tous les produits
+          </ion-segment-button>
+        </ion-segment>
+      </ion-item>
+    </ion-list>
+  </ion-menu>
+</ion-item> -->
